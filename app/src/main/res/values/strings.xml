@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name"><font color="#57A333">EventFinder</font></string>
+    <string-array name="category">
+        <item><font color="white">All</font></item>
+        <item><font color="white">Music</font></item>
+        <item><font color="white">Sports</font></item>
+        <item><font color="white">Arts &amp; Theatre</font></item>
+        <item><font color="white">Film</font></item>
+        <item><font color="white">Miscellaneous</font></item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
+

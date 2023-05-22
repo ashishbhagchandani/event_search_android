@@ -1,0 +1,15 @@
+
+    <TextView
+        android:id="@+id/text1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:text="Distance (Miles)*"
+        android:textColor="@color/search_green"
+        android:textSize="16sp"
+/>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_facebook"
+        android:icon="@drawable/facebook"
+        android:title="TODO"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_twitter"
+        android:icon="@drawable/twitter"
+        app:showAsAction="ifRoom"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/action_fav"
+        android:icon="@drawable/heart_outline"
+        app:showAsAction="ifRoom"
+        android:title="TODO" />
+
+
+</menu>

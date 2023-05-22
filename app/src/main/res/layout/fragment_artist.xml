@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtistFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="40dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewartist"
+                android:layout_width="match_parent"
+                android:layout_height="694dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.384"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--        <ImageView-->
+                <!--            android:id="@+id/back_button"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="start"-->
+                <!--            android:layout_marginStart="16dp"-->
+                <!--            android:layout_marginTop="1dp"-->
+                <!--            android:src="@drawable/ic_baseline_arrow_back_24" />-->
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/textView"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_marginLeft="50dp"-->
+                <!--            android:layout_marginTop="2dp"-->
+                <!--            android:text="Back to Search"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="16sp"-->
+                <!--            android:textStyle="bold" />-->
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/noartistscard"
+                            android:layout_width="355dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="300dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="8dp">
+
+                            <TextView
+                                android:id="@+id/noevents"
+                                android:paddingTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Artist/Music data unavailable"
+                                android:textColor="@color/search_green"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+
+
+                <!--        <ProgressBar-->
+                <!--            android:id="@+id/progress_bar"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_gravity="center" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewartist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:layout_marginBottom="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

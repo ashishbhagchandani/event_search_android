@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="@color/status_bar"-->
+<!--        android:titleTextColor="@color/search_green"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/eventTitle"-->
+<!--        android:layout_width="136dp"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:text="TextView"-->
+<!--        android:textColor="@color/search_green"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="84dp"-->
+<!--        tools:layout_editor_absoluteY="8dp" />-->
+
+<!--</android.support.design.widget.AppBarLayout>-->
+
+<com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_weight="1"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:text="TextView"
+            android:textColor="@color/search_green"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="8dp"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="130dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/facebook" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/twitter" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/favTool"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onFavClick"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/heart_outline" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

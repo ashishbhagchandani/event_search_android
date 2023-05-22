@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="372dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/black"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="25dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:scaleType="fitXY"
+                android:layout_height="95dp"
+                tools:src="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/artistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:text="Artist name"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="50dp"
+            android:text="Followers"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/underline"
+            android:text="Check out on Spotify"
+            android:textColor="@color/search_green"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="15dp"
+            android:text="Popularity"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="288dp"
+            android:layout_marginTop="40dp"
+            android:indeterminateOnly="false"
+            android:progress="60"
+            android:progressDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="315dp"
+            android:layout_marginTop="67dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="95" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="127dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/popularalbums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="137dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="Popular Albums" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="185dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/album1"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                tools:src="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="185dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/album2"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                tools:src="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="185dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/album3"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                tools:src="@tools:sample/avatars" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

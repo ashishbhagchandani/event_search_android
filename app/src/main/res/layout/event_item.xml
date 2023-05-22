@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="372dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/eventname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="7dp"
+            android:maxWidth="130dp"
+            android:text="Event name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="7dp"
+            android:text="09/16/2023"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="40dp"
+            android:text="6:00 PM"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:text="venue name"
+            android:maxWidth="130dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="72dp"
+            android:text="genre name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="88dp"
+            android:layout_marginLeft="8dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="88dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/heartoutline"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_marginLeft="335dp"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            app:srcCompat="@drawable/heart_outline" />-->
+
+        <ImageView
+            android:id="@+id/heartfilled"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="70dp"
+            app:srcCompat="@drawable/heart_outline" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>
